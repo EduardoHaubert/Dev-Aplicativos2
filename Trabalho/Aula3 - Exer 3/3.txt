@@ -1,0 +1,10 @@
+void main() {
+
+  double baseMaior = 5;
+  double baseMenor = 3;
+  double altura = 5;
+  double result = ((baseMaior + baseMenor) * altura) /2;
+  
+  print("Área de um trapézio: $result");
+   
+}

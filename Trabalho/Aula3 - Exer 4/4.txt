@@ -1,0 +1,8 @@
+void main() {
+
+  double ladoQuadrado = 3;
+  double result = ladoQuadrado * ladoQuadrado;
+  
+  print("Área de um quadrado: $result m²");
+   
+}
