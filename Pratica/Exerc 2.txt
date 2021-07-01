@@ -1,0 +1,221 @@
+1.void main() {
+  int numero1 = 10;
+   
+  
+  if(numero1 >= 0){
+    print("numero positivo");
+      
+  }else {
+    print("numero negativo");
+  }
+  
+}
+
+2.void main() {
+  int numero1 = 5;
+  int numero2 = 5;
+  
+  if(numero1 > numero2){
+    print("Primeiro é maior");
+      
+  }else if (numero2 > numero1){
+    print("Segundo é maior");
+      
+    
+  }else {
+    print("Números iguais");
+  }
+  
+}
+
+3. A)
+void main() {
+  int a= 2;
+  int b= 4;
+  int c= 5;
+  
+  int resultado = a + (b*c);
+   
+  
+ print(resultado);
+  
+}
+
+b)void main() {
+  int a= 2;
+  int b= 4;
+  int c= 5;
+  
+ double resultado= (b/a)*c;
+   
+  
+ print(resultado);
+  
+}
+
+4. void main() {
+  int a= 5;
+  int b= 5;
+  
+  double resultado= (a+b)/2;
+   
+ if(resultado >= 6){
+   print("aprovado");
+ }else {
+   print("reprovado");
+ }
+  
+}
+
+5.void main() {
+  int a= 2;
+  int b= 10;
+  int c=10;
+  
+  double resultado= (a+b+c)/3;
+  
+ if(resultado >= 7){
+   print("aprovado");
+ }else if(resultado >= 6 && resultado <=7 ){
+   print("exame");
+ }else {
+   print("reprovado");
+ }
+  
+}
+
+6.void main() {
+  
+  double nota1 = 5;
+  double nota2 = 3;
+  double nota3 = 2;
+  double nota4 = 4;
+  double result = (nota1 + nota2 + nota3 + nota4) / 4;
+  
+  if (result >= 7){
+    
+    print("Aprovado! $result");
+    if(result >= 9){
+      
+    print("Conceito: A.");
+    }else if(result >= 8 && result <= 8.9){
+      
+       print("Conceito: B.");
+    }else{
+      print("Conceito: C.");
+    }
+  }
+  else{
+    print("Reprovado, Conceito: $result");
+    print("Conceito: F");
+  }
+}
+
+7.void main() {
+  int peso=10;
+  double altura=1.70;
+   
+  double resultado= peso/(altura*altura);
+  
+ if(resultado <18.5){
+   print("abaixo do peso");
+ }else if(resultado >= 18.5 && resultado <=24.9){
+   print("peso normal ou saldavel");
+ }else if(resultado >= 25.0 && resultado <= 29.9){
+   print("acima do peso");
+ }else {
+   print("obesidade");
+ }
+  
+}
+
+8.void main() {
+  int saldo=10;
+  int sacar=10;
+   
+ dynamic novosaldo=saldo-sacar;
+  
+ if(sacar <saldo){
+   print("saldo indisponivel");
+ }else {
+   print("Saque fetuado com sucesso!" );
+    print("novo saldo:" + novosaldo);
+   
+ }
+  
+
+}
+
+9.      
+Desenvolva
+um programa que calcule a idade e diga se qual a categoria de um curso de
+natação: Criança 0 a 12 anos, Jovem de 13 a 21 anos, Adulto 22 a 59 anos e
+Terceira Idade 60 anos ou mais.
+
+
+void main() {
+  
+  double idade = 22;
+  
+  if(idade <= 12){
+    print("Categoria: \nCriança 0 a 12 anos ");
+  }else if(idade >= 13 && idade <= 21){
+    print("Categoria: \nJovem de 13 a 21 anos ");
+  }
+  else if(idade >= 22 && idade <= 59){
+    print("Categoria: \nAdulto 22 a 59 anos ");
+  }
+    else {
+    print("Categoria: \nTerceira Idade 60 anos ou mais ");
+    }
+}
+
+10.      
+Desenvolva
+um programa em Dart que informe qual o tamanho que a cliente deve usar baseado
+no seu peso: P - menor que 60 kg, M - 61 a 74 e G - 75 a 85 e GG acima de 86
+kg.
+
+void main() {
+  
+  double peso = 65;
+  
+  if(peso <= 60){
+    print("P - menor que 60");
+  }
+  else if(peso >= 61 && peso <= 74){
+    print("M - 61 a 74");
+  }
+  else if(peso >= 75 && peso <= 85){
+    print("G - 75 a 85");
+  }
+  else{
+    print("GG - acima de 86");
+  }
+
+}
+
+11.      
+Desenvolva
+um programa em Dart que informe qual o novo salário do funcionário. O valor do
+dissídio 4%. O funcionário somente vai receber caso tenha 1 ou mais anos de
+empresa. Calcule o novo salário e mostre na tela e caso não tenha direito
+informe “Funcionário com menos de 1 ano de empresa”.
+
+void main() {
+  
+  double salario = 1600;
+  double anoEmpresa = 2;
+  double dissidio = 1.04;
+  double result;
+  
+  if(anoEmpresa >= 1){
+    result = salario * dissidio;
+    print("Novo Salario: $result");
+  }
+  else{
+    print("Funcionário com menos de 1 ano de empresa");
+  }
+}
+
+
